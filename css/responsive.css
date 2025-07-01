@@ -1,0 +1,366 @@
+@media (max-width: 800px) {
+
+    /* MENU */
+    .menu-toggle {
+        display: flex;
+    }
+
+    .main-nav {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: black;
+        padding: 20px;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .main-nav.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav ul li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    /* OUTRAS SEÇÕES */
+    .join-options {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .main-header {
+        height: 60px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-section h3::after {
+        margin: 0.5rem auto 0;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .footer-links a:hover {
+        padding-left: 0;
+    }
+
+    .header-logo {
+        max-width: 150px;
+    }
+
+    .footer-logo-img {
+        width: 300px;
+        margin: 0 auto 1.5rem;
+    }
+
+    .section-divider {
+        bottom: -40px;
+    }
+
+    .divider-logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    section+section {
+        margin-top: 40px;
+    }
+
+    .team-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .team-image {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .team-description {
+        text-align: center;
+    }
+
+    .team-section {
+        padding: 100px 0 40px;
+    }
+
+    .team-section h1 {
+        font-size: 2rem;
+    }
+
+    .team-description h2 {
+        font-size: 1.8rem;
+    }
+
+    .team-description p {
+        font-size: 1rem;
+    }
+
+    .social-cta-section {
+        padding: 4rem 1rem;
+    }
+
+    .social-cta-section h2 {
+        font-size: 2.2rem;
+    }
+
+    .social-cta-text {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+
+    .social-cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .social-cta-btn {
+        width: 100%;
+        max-width: 300px;
+        padding: 1rem 2rem;
+    }
+
+    .projects-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .projects-image {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .projects-text {
+        text-align: center;
+    }
+
+    .impact-list {
+        text-align: left;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .projects-hero {
+        padding: 100px 0 40px;
+    }
+
+    .projects-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .projects-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .methodology-section h2 {
+        font-size: 2rem;
+    }
+
+    .methodology-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .sponsors-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .sponsors-intro p {
+        font-size: 1.1rem;
+    }
+
+    .sponsors-benefits li {
+        font-size: 1rem;
+    }
+
+    .sponsors-container {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .become-sponsor h2 {
+        font-size: 2rem;
+    }
+
+    .become-sponsor p {
+        font-size: 1.1rem;
+    }
+
+    .robotics-intro {
+        padding: 100px 0 40px;
+    }
+
+    .robotics-intro h1 {
+        font-size: 2.2rem;
+    }
+
+    .info-card {
+        margin: 0 1rem 2rem;
+        padding: 1.5rem;
+    }
+
+    .info-card h2 {
+        font-size: 1.8rem;
+    }
+
+    .info-card p {
+        font-size: 1rem;
+    }
+
+    .photo-gallery h2 {
+        font-size: 2rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+
+    .contact-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .contact-intro {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+
+    .roles-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .role-card {
+        padding: 1.5rem;
+    }
+
+    .role-card h2 {
+        font-size: 1.6rem;
+    }
+
+    .contact-methods {
+        grid-template-columns: 1fr;
+    }
+
+    .sponsors-carousel h2 {
+        font-size: 2rem;
+    }
+
+    .sponsorsSwiper .swiper-slide {
+        height: 120px;
+    }
+
+
+    .listras {
+        visibility: hidden;
+    }
+
+
+   /* responsive Equipe */
+    .geracao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+    }
+
+    .geracao .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 500px;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        gap: 1rem;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .saiba-mais-botao {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .image img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 1024px) {
+    .card,
+    .about-content,
+    .projects-content,
+    .team-content,
+    .footer-content,
+    .saiba-mais-botao {
+        flex-direction: column !important;
+        text-align: center;
+        align-items: center;
+    }
+
+    .image img,
+    .projects-image,
+    .team-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .container {
+        padding: 1rem 2rem;
+    }
+
+    .listras {
+        display: none;
+    }
+}
