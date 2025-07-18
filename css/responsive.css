@@ -108,7 +108,17 @@
         gap: 2rem;
     }
 
+    .images {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem; 
+    }
+
     .team-image {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .flag-image {
         max-width: 600px;
         margin: 0 auto;
     }
