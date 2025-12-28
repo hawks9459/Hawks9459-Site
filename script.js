@@ -102,7 +102,8 @@ document.addEventListener('DOMContentLoaded', function () {
         const backgrounds = [
             "assets/wallpapers/wallpaper.png",
             "assets/wallpapers/wallpaper2.jpeg",
-            "assets/wallpapers/wallpaper5.jpeg"
+            "assets/wallpapers/wallpaper5.jpeg",
+            "assets/wallpapers/wallpaper6.jpeg"
         ];
 
         let indexAtual = 0;
